@@ -1,0 +1,42 @@
+@import "_variables.scss";
+
+/*-------------------- Footer --------------------*/
+.footer {
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 1.25rem 0;
+
+    .footer-container {
+        margin: 0 1.5rem;
+
+        div {
+            .footer-title,
+            .footer-subtitle {
+                color: white;
+            }
+
+            .footer-title {
+                margin-bottom: 0.25rem;
+                font-size: 1rem;
+                font-weight: 600;
+                color: var(--title-color);
+            }
+
+            .footer-subtitle {
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 2rem 0;
+
+        .footer-title {
+            font-size: 1.4rem;
+        }
+
+        .footer-subtitle {
+            font-size: 1.1rem;
+        }
+    }
+}
