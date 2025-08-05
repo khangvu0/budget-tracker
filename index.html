@@ -33,53 +33,58 @@
                 <p>Track your income and expenses with ease</p>
             </div>
 
-            <!-- Budget Form -->
-            <section class="budget-form">
-                <h2>Add a Transaction</h2>
-                <form id="transaction-form">
-                    <input type="text" id="description" placeholder="Description (e.g. Salary, Groceries)" required />
-                    <input type="number" id="amount" placeholder="Amount (use '-' for expenses)" required />
+            <div class="section-containers">
+                <div class="form-summary_container">
+                    <!-- Budget Form -->
+                    <section class="budget-form">
+                        <h2>Add a Transaction</h2>
+                        <form id="transaction-form">
+                            <input type="text" id="description" placeholder="Description (e.g. Salary, Groceries)" required />
+                            <input type="number" id="amount" placeholder="Amount (use '-' for expenses)" required />
 
-                    <select id="category" required>
-                        <option value="" disabled selected>Select Category</option>
-                        <option value="income">Income</option>
-                        <option value="food">Food</option>
-                        <option value="transport">Transport</option>
-                        <option value="entertainment">Entertainment</option>
-                        <option value="other">Other</option>
-                    </select>
+                            <select id="category" required>
+                                <option value="" disabled selected>Select Category</option>
+                                <option value="income">Income</option>
+                                <option value="food">Food</option>
+                                <option value="transport">Transport</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="other">Other</option>
+                            </select>
 
-                    <button type="submit" class="btn">Add Transaction</button>
-                </form>
-            </section>
+                            <button type="submit" class="btn">Add Transaction</button>
+                        </form>
+                    </section>
 
-            <!-- Budget Summary -->
-            <section class="budget-summary">
-                <h2>Summary</h2>
+                    
+                    <!-- Budget Summary -->
+                    <section class="budget-summary">
+                        <h2>Summary</h2>
 
-                <div class="row">
-                    <div class="card">
-                        <h3>Total Balance</h3>
-                        <p id="total-balance">$0.00</p>
-                    </div>
+                        <div class="row">
+                            <div class="card">
+                                <h3>Total Balance</h3>
+                                <p id="total-balance">$0.00</p>
+                            </div>
 
-                    <div class="card">
-                        <h3>Total Income</h3>
-                        <p id="total-income">$0.00</p>
-                    </div>
+                            <div class="card">
+                                <h3>Total Income</h3>
+                                <p id="total-income">$0.00</p>
+                            </div>
 
-                    <div class="card">
-                        <h3>Total Expenses</h3>
-                        <p id="total-expenses">$0.00</p>
-                    </div>
+                            <div class="card">
+                                <h3>Total Expenses</h3>
+                                <p id="total-expenses">$0.00</p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            </section>
 
-            <!-- Transaction List -->
-            <section class="transaction-list">
-                <h2>Transaction History</h2>
-                <ul id="transactions"></ul>
-            </section>
+                <!-- Transaction List -->
+                <section class="transaction-list">
+                    <h2>Transaction History</h2>
+                    <ul id="transactions"></ul>
+                </section>
+            </div>
         </main>
 
         <!------------------- FOOTER ------------------->
