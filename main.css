@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/*-------------------- Header --------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #ffffff;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  margin: 0 1.5rem;
+  font-weight: 500;
+}
+.header .nav .nav_logo,
+.header .nav .nav_link {
+  color: #333333;
+  transition: color 0.2s ease;
+}
+.header .nav .nav_logo:hover,
+.header .nav .nav_link:hover {
+  color: #38546B;
+}
+.header .nav .nav_list {
+  display: flex;
+}
+.header .nav .nav_list .nav_link {
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .nav_logo {
+    font-size: 1.5rem;
+  }
+  .nav_link {
+    font-size: 1rem;
+  }
+}
+/*-------------------- Footer --------------------*/
+.footer {
+  width: 100%;
+  background-color: #253746;
+  padding: 1.25rem 0;
+}
+.footer .footer-container {
+  margin: 0 1.5rem;
+}
+.footer .footer-container div .footer-title,
+.footer .footer-container div .footer-subtitle {
+  color: white;
+}
+.footer .footer-container div .footer-title {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.footer .footer-container div .footer-subtitle {
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 2rem 0;
+  }
+  .footer .footer-title {
+    font-size: 1.4rem;
+  }
+  .footer .footer-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+.btn {
+  background-color: #253746;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.btn:hover {
+  background-color: #38546B;
+}
+.btn:focus {
+  outline: 2px solid #38546B;
+  outline-offset: 2px;
+}
+
+/*-------------------- Page Layout --------------------*/
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  margin: 4rem 1.5rem 2rem;
+  flex: 1;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.intro p {
+  font-size: 1rem;
+  color: #333333;
+}
+
+/*-------------------- Form Section --------------------*/
+.budget-form {
+  margin-bottom: 2rem;
+}
+.budget-form h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.budget-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.budget-form form input,
+.budget-form form select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+/*-------------------- Budget Summary --------------------*/
+.budget-summary {
+  margin-bottom: 2rem;
+}
+.budget-summary h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.budget-summary .row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .budget-summary .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.budget-summary .card {
+  background-color: #f5f3ef;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.budget-summary .card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.budget-summary .card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/*-------------------- Transaction List --------------------*/
+.transaction-list h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.transaction-list ul {
+  padding: 0;
+  overflow-y: auto;
+  max-height: 9rem;
+}
+.transaction-list ul li {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-content {
+    padding: 0 1.5rem;
+  }
+  .section-containers {
+    display: flex;
+    gap: 2rem;
+  }
+  .form-summary_container {
+    flex: 1;
+  }
+  .budget-summary .card {
+    padding: 1rem 2rem;
+  }
+  .budget-summary .card h3 {
+    font-size: 1.2rem;
+  }
+  .budget-summary .card p {
+    font-size: 1.2rem;
+  }
+  .transaction-list {
+    border-left: 1px solid #e0e0e0;
+    padding-left: 1.5rem;
+    flex: 1;
+  }
+  .transaction-list ul {
+    max-height: 448px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-containers {
+    gap: 4rem;
+  }
+  .form-summary_container {
+    flex: 1.5;
+  }
+  .budget-summary .card {
+    padding: 1.5rem 3rem;
+  }
+  .budget-summary .card h3 {
+    font-size: 1.2rem;
+  }
+  .budget-summary .card p {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
