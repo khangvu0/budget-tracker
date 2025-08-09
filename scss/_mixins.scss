@@ -1,0 +1,15 @@
+@import "_variables.scss";
+
+@mixin gradient($color1, $color2) {
+    background-image: linear-gradient($color1, $color2);
+}
+
+@mixin animations($duration, $easing) {
+  @keyframes buttonClick {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(0.95); }
+    100% { transform: scale(1); }
+  }
+
+  animation: buttonClick $duration $easing;
+}
