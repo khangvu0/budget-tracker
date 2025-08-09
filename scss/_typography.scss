@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import "_variables.scss";
 
 * {
   font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5,h6 {
+  color: map-get($colors, primary-color);
+}
+
+p {
+  color: map-get($colors, text);
 }
