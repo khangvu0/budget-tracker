@@ -1,7 +1,8 @@
 @import "_variables.scss";
+@import "_mixins.scss";
 
 .btn {
-  background-color: map-get($colors, main);
+  background-color: map-get($colors, primary-color);
   color: white;
   border: none;
   border-radius: 0.375rem;
@@ -17,5 +18,9 @@
   &:focus {
     outline: 2px solid map-get($colors, secondary);
     outline-offset: 2px;
+  }
+
+  &:active {
+    @include animations(0.3s, ease-out)
   }
 }
