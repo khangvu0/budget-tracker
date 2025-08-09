@@ -1,18 +1,18 @@
 @import "_variables.scss";
+@import "_mixins.scss";
 
 /*-------------------- Page Layout --------------------*/
 html,
 body {
-    height: 100%;
+    // height: 100%;
     display: flex;
     flex-direction: column;
+    @include gradient(map-get($colors, body), map-get($colors, secondary));
 }
 
 .main-content {
     margin: 4rem 1.5rem 2rem;
     flex: 1; // This pushes the footer to the bottom if content is short
-    // padding: 5rem 1.5rem 2rem;
-    // margin: 0 auto;
 }
 
 .intro {
@@ -26,7 +26,6 @@ body {
 
     p {
         font-size: 1rem;
-        color: map-get($colors, text);
     }
 }
 
@@ -63,7 +62,7 @@ body {
         margin-bottom: 1rem;
     }
 
-    .row {
+    .budget-summary_info {
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -148,6 +147,10 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+    html,
+    body {
+        height: 100%;
+    }
     .section-containers {
         gap: 4rem;
     }

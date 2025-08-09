@@ -3,7 +3,7 @@
 /*-------------------- Footer --------------------*/
 .footer {
     width: 100%;
-    background-color: map-get($colors, main);
+    background-color: map-get($colors, primary-color);
     padding: 1.25rem 0;
 
     .footer-container {
