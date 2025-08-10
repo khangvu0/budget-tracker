@@ -40,7 +40,7 @@
                         <h2>Add a Transaction</h2>
                         <form id="transaction-form">
                             <input type="text" id="description" placeholder="Description (e.g. Salary, Groceries)" required />
-                            <input type="number" id="amount" placeholder="Amount (use '-' for expenses)" required />
+                            <input type="number" id="amount" min="0" step=".01" placeholder="Amount (use '-' for expenses)" required />
 
                             <select id="category" required>
                                 <option value="" disabled selected>Select Category</option>
