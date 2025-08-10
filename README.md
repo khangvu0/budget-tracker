@@ -1,6 +1,6 @@
 # Budget Tracker
 
-A responsive and interactive budget management web application built for my Week 4 JavaScript & SASS assignment. This project focuses on implementing object-oriented programming principles, dynamic DOM manipulation, and efficient, maintainable styling with SASS.
+A responsive and interactive budget management web application. This project focuses on implementing object-oriented programming principles, dynamic DOM manipulation, and efficient, maintainable styling with SASS.
 
 ## Live Demo
 
